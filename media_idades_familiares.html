@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA DE IDADE DA FAMILIA</title>
+</head>
+<body>
+    <script>
+    function pularLinha() {
+        
+        document.write("<br>");
+    
+    }
+
+    function imprimir(texto) {
+    
+        document.write(texto);
+        pularLinha();
+
+    }
+
+
+    var numeroDePessoas = parseInt(prompt("Quantas pessoas tem na família? "))
+
+    var numero = 1
+    var totalIdade = 0;
+
+    while(numero <= numeroDePessoas){
+
+        var idade = parseInt(prompt("Qual é a idade da pessoa?"));
+        numero ++;
+        totalIdade = totalIdade + idade;
+
+    }
+
+    var mediaDasIdades = totalIdade / numeroDePessoas
+    
+    imprimir("A média das idade é " + mediaDasIdades)
+    imprimir("fim")
+
+    </script>
+</body>
+</html>

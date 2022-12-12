@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinhação</title>
+</head>
+<body>
+    
+<input type="">
+
+<button>
+
+    Compare com meu segredo
+
+</button>
+
+
+<script>
+
+    //var segredo = Math.round(Math.random() * 10);
+    
+    var segredos = [5, 6, 10, 2];
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifca (){
+
+        var achou = false;
+
+        for (var posicao = 0; posicao < segredos.length; posicao++){
+
+            if (input.value == segredos[posicao]) {
+
+                alert("Você acertou !");
+                achou = true;
+                break;
+
+            }
+        }
+
+        if(achou == false) {
+            alert("Você Errou !")
+        }
+        
+
+        input.value = "";
+        input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifca;
+
+
+</script>
+
+
+</body>
+</html>
