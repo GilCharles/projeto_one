@@ -36,5 +36,11 @@ public class Main {
         System.out.println(controle.getSoma());
 
 */
+
+        Gerente g = new Gerente();
+        g.setSenha("2222");
+
+        SistemaInterno si = new SistemaInterno();
+        si.autentica(g);
     }
 }

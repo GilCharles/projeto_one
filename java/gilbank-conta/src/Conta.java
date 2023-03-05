@@ -1,10 +1,14 @@
-public class Conta {
+public abstract class Conta {
 
-    private double saldo;
+    // Atributos
+
+    private  double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
     private static int total = 0;
+
+    // Construtores
 
     public Conta(int agencia, int numero){
         Conta.total++;
@@ -15,6 +19,7 @@ public class Conta {
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
+    // Métodos
     public void deposita(double valor) {
         this.saldo = this.saldo + valor;
     }
