@@ -1,8 +1,8 @@
 public class SistemaInterno {
 
-    private String senha = "2222";
+    private int senha = 2222;
 
-    public void autentica ( FuncionarioAutenticavel fa) {
+    public void autentica ( Autenticavel fa) {
 
         boolean autenticou = fa.autentica(this.senha);
 

@@ -37,10 +37,5 @@ public class Main {
 
 */
 
-        Gerente g = new Gerente();
-        g.setSenha("2222");
-
-        SistemaInterno si = new SistemaInterno();
-        si.autentica(g);
     }
 }

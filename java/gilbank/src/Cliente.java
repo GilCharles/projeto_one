@@ -1,22 +1,14 @@
-public class Administrador extends Funcionario implements Autenticavel {
+public class Cliente implements Autenticavel {
 
-
-    // Atributos
 
     private AutenticacaoUtil autenticador;
 
-    // Construtor
 
-    public Administrador() {
+
+    public Cliente() {
 
         AutenticacaoUtil util = new AutenticacaoUtil();
     }
-    @Override
-    public double getBonificacao() {
-        return 50;
-    }
-
-    // Métodos
 
     @Override
     public boolean autentica(int senha) {
@@ -30,5 +22,3 @@ public class Administrador extends Funcionario implements Autenticavel {
         this.autenticador.setSenha(senha);
     }
 }
-
-
