@@ -38,7 +38,7 @@ public class TestandoListas {
             System.out.println("percorrendo:" + aula);
         });
 
-        aulas.add("AUmentando nosso conhecimento");
+        aulas.add("Aumentando nosso conhecimento");
 
         Collections.sort(aulas);
         System.out.println(aulas);
