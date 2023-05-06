@@ -22,5 +22,7 @@ public class TestaCursoComAluno {
         javaColecoes.getAlunos().forEach(a -> {
             System.out.println(a);
         });
+
+        System.out.println(javaColecoes.estaMatriculado(a1));
     }
 }
